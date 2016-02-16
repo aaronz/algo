@@ -36,17 +36,18 @@
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class Solution {
 public:
-	bool canWinNim(int n) {
-		return n % 4 != 0;
-	}
+    bool canWinNim(int n) {
+        return n % 4 != 0;
+    }
 };
 
 void main() {
-	Solution *s = new Solution();
-	cout << s->canWinNim(4) << endl;
-	cout << s->canWinNim(5) << endl;
+    Solution *s = new Solution();
+    cout << s->canWinNim(4) << endl;
+    cout << s->canWinNim(5) << endl;
 }

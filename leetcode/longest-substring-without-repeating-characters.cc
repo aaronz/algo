@@ -28,7 +28,10 @@
 #include <string>
 #include <map>
 
-using namespace std;
+using std::cout;
+using std::endl;
+using std::string;
+using std::map;
 
 int lengthOfLongestSubstring(string s) {
     map<char, int> m;
