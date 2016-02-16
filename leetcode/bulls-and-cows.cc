@@ -63,25 +63,25 @@ using std::to_string;
 
 class Solution {
 public:
-    string getHint(string secret, string guess) {
-        int a = 0, b = 0;
-        int hash1[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    string GetHint(string secret, string guess) {
+        int bulls = 0, cows = 0;
+        int hash[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         for (int i = 0; i < secret.length(); i++) {
-            if (secret[i] == guess[i]) a++;
-            hash1[secret[i] - '0']++;
-            hash1[guess[i] - '0']--;
+            if (secret[i] == guess[i]) bulls++;
+            hash[secret[i] - '0']++;
+            hash[guess[i] - '0']--;
         }
         for (int i = 0; i < 10; i++) {
-            if (hash1[i] >= 0)
-                b += hash1[i];
+            if (hash[i] >= 0)
+                cows += hash[i];
         }
-        b = secret.length() - b - a;
-        return to_string(a) + "A" + to_string(b) + "B";
+        cows = secret.length() - cows - bulls;
+        return to_string(bulls) + "A" + to_string(cows) + "B";
     }
 };
 
 void main() {
     Solution *s = new Solution();
-    cout << s->getHint("1123", "0111") << endl;
-    cout << s->getHint("1807", "7810") << endl;
+    cout << s->GetHint("1123", "0111") << endl;
+    cout << s->GetHint("1807", "7810") << endl;
 }
