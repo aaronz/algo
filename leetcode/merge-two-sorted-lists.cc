@@ -2,27 +2,27 @@
 
 * Author: Aaron Zhang
 * Date: 15. February 2016
-* 
+*
 * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
-* 
+*
 * Subscribe to see which companies asked this question
-* 
-* 
+*
+*
 * Show Tags
-* 
+*
 * Linked List
-* 
-* 
-* 
+*
+*
+*
 * Show Similar Problems
-* 
+*
 *  (H) Merge k Sorted Lists
 *  (E) Merge Sorted Array
 *  (M) Sort List
 *  (M) Shortest Word Distance II
-* 
-* 
-* 
+*
+*
+*
 */
 
 #include <iostream>
@@ -99,7 +99,7 @@ void main() {
 	}
 	printList(l1);
 	printList(l2);
-	
+
 	ListNode *result = mergeTwoLists(l1, l2);
 	printList(result);
 }

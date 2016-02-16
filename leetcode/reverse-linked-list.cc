@@ -2,30 +2,30 @@
 
 * Author: Aaron Zhang
 * Date: 15. February 2016
-* 
+*
 * Reverse a singly linked list.
 * click to show more hints.
 * Hint:
 * A linked list can be reversed either iteratively or recursively. Could you implement both?
-* 
-* 
+*
+*
 * Subscribe to see which companies asked this question
-* 
-* 
+*
+*
 * Show Tags
-* 
+*
 * Linked List
-* 
-* 
-* 
+*
+*
+*
 * Show Similar Problems
-* 
+*
 *  (M) Reverse Linked List II
 *  (M) Binary Tree Upside Down
 *  (E) Palindrome Linked List
-* 
-* 
-* 
+*
+*
+*
 */
 
 #include <iostream>

@@ -2,40 +2,50 @@
 
 * Author: Aaron Zhang
 * Date: 15. February 2016
-* 
-* 
-* Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-* 
-* 
-* push(x) -- Push element x onto stack.
-* 
-* 
-* pop() -- Removes the element on top of the stack.
-* 
-* 
-* top() -- Get the top element.
-* 
-* 
-* getMin() -- Retrieve the minimum element in the stack.
-* 
-* 
-* 
+*
+*
+
+* Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+
+*
+*
+
+* push(x) -- Push element x onto stack.
+
+*
+*
+
+* pop() -- Removes the element on top of the stack.
+
+*
+*
+
+* top() -- Get the top element.
+
+*
+*
+
+* getMin() -- Retrieve the minimum element in the stack.
+
+*
+*
+*
 * Subscribe to see which companies asked this question
-* 
-* 
+*
+*
 * Show Tags
-* 
+*
 * Stack
 * Design
-* 
-* 
-* 
+*
+*
+*
 * Show Similar Problems
-* 
+*
 *  (H) Sliding Window Maximum
-* 
-* 
-* 
+*
+*
+*
 */
 
 #include <iostream>
@@ -68,10 +78,10 @@ public:
 	}
 
 	int getMin() {
-		return list == NULL ? 0: list->min;
+		return list == NULL ? 0 : list->min;
 	}
 
-	bool isEmpty(){
+	bool isEmpty() {
 		return list == NULL;
 	}
 
@@ -86,9 +96,9 @@ void main() {
 		cout << stack->getMin() << endl;
 	}
 
-	while (!stack->isEmpty()){
+	while (!stack->isEmpty()) {
 		int top = stack->top();
 		stack->pop();
-		cout<<"pop"<<top<<"min"<<stack->getMin()<<endl;
+		cout << "pop" << top << "min" << stack->getMin() << endl;
 	}
 }
