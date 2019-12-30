@@ -23,10 +23,10 @@ class MyQueue:
     def count(self):
         return self.tail - self.head
 
-    def print(self):
-        print(self.data)
-        print("**************")
-        print(self.data[self.head: self.tail])
+    # def print(self):
+    #     print(self.data)
+    #     print("**************")
+    #     print(self.data[self.head: self.tail])
 
 
 class MyNode:
@@ -204,3 +204,78 @@ def delete_node(root, data):
     height = my_max(get_height(root.get_right), get_height(root.get_left))
     root.set_height(height)
     return root
+
+
+class AvlTree:
+    def __init__(self):
+        self.root = None
+
+    def get_height(self):
+        return get_height(self.root)
+
+    def insert(self, data):
+        print("insert:" + str(data))
+        self.root = insert_node(self.root, data)
+
+    def delete_node(self, data):
+        print("delete:"+str(data))
+        if self.root is None:
+            print("Tree is empty!")
+            return
+        self.root = delete_node(self.root, data)
+
+    def traversale(self):
+        q = MyQueue()
+        q.push(self.root)
+        layer = self.get_height()
+        if layer == 0:
+            return
+
+        count = 0
+        while not q.Empty():
+            node = q.pop()
+            space = " " * int(max.pow(2, layer - 1))
+            print(space, end="")
+            if node is None:
+                print("*", end="")
+                q.push(None)
+                q.push(None)
+            else:
+                print(node.get_data(), end="")
+                q.push(node.get_left())
+                q.push(node.get_right())
+            print(space, end="")
+            print(space, end="")
+            count = count + 1
+            for i in range(100):
+                if count == math.pow(2, i) - 1:
+                    layer = layer - 1
+                    if layer == 0:
+                        print()
+                        print("****************************")
+                        return
+                    print()
+                    break
+        print()
+        print("****************************")
+        return
+
+    def test(self):
+        get_height(None)
+        print("****")
+        self.get_height()
+
+
+if __name__ == "__main__":
+    t = AvlTree()
+    t.traversale()
+    l = list(range(10))
+    random.shuffle(l)
+    for i in l:
+        t.insert(i)
+        t.traversale()
+
+    random.shuffle(l)
+    for i in l:
+        t.delete_node(i)
+        t.traversale()
