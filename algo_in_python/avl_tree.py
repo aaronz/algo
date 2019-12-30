@@ -152,3 +152,55 @@ def insert_node(node, data):
     h1 = my_max(get_height(node.get_height()), get_height(node.get_left())) + 1
     node.set_height(h1)
     return node
+
+
+def get_right_most(root):
+    while root.get_right() is not None:
+        root = root.get_right()
+    return root.get_data()
+
+
+def get_left_most(root):
+    while root.get_left() is not None:
+        root = root.get_left()
+    return root.get_data()
+
+
+def delete_node(root, data):
+    if root.get_data() == data:
+        if root.get_left() is not None and root.get_right() is not None:
+            temp_data = get_left_most(root.get_right())
+            root.set_data(temp_data)
+            root.set_right(delete_node(root.get_right(), temp_data))
+        elif root.get_left() is not None:
+            root = root.get_left()
+        else:
+            root = root.get_right()
+    elif root.get_data() > data:
+        if root.get_left() is None:
+            print("No such data")
+            return root
+        else:
+            root.set_left(delete_node(root.get_left(), data))
+    elif root.get_data() < data:
+        if root.get_right() is None:
+            return root
+        else:
+            root.set_right(delete_node(root.get_right(), data))
+
+    if root is None:
+        return root
+    if get_height(root.get_right()) - get_height(root.get_left()) == 2:
+        if get_height(root.get_right().get_right()) > get_height(root.get_right().get_left()):
+            root = right_rotation(root)
+        else:
+            root = left_right_rotation(root)
+    elif get_height(root.get_right()) - get_height(root.get_left()) == -2:
+        if get_height(root.get_left().get_left()) > get_height(root.get_left().get_right()):
+            root = left_rotation(root)
+        else:
+            root = right_left_rotation(root)
+
+    height = my_max(get_height(root.get_right), get_height(root.get_left))
+    root.set_height(height)
+    return root
