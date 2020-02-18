@@ -28,6 +28,8 @@
 #include <string>
 #include <map>
 
+#define DEBUG
+
 using std::cout;
 using std::endl;
 using std::string;
@@ -39,16 +41,26 @@ int lengthOfLongestSubstring(string s) {
     for (int i = 0; i < s.size(); i++) {
         if (m.find(s[i]) != m.end() && lastPosition < m[s[i]]) {
             lastPosition = m[s[i]];
+            #ifdef DEBUG
+            cout << "i:" << i << " " << "s[i]:" << s[i] << " " << "LastPosition:" << lastPosition << endl;
+            #endif
         }
         if (i - lastPosition > maxLen) {
             maxLen = i - lastPosition;
         }
         m[s[i]] = i;
     }
+    #ifdef DEBUG
+    map<char, int>::iterator it;
+    for (it = m.begin(); it != m.end(); it++){
+        cout << it->first << ":" << it->second << endl;
+    }
+    #endif
     return maxLen;
 }
 
-void main() {
-    cout << lengthOfLongestSubstring("abcabcd") << endl;
-    cout << lengthOfLongestSubstring("aaaa") << endl;
+int main() {
+    cout << lengthOfLongestSubstring("abcedfgabcdfdsafda") << endl;
+    cout << lengthOfLongestSubstring("abcadefga") << endl;
+    return 0;
 }
