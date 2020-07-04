@@ -1,0 +1,112 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReverseVowels",
+            "request": "launch",
+            "mainClass": "leetcode.java.ReverseVowels",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SumOfSquareNumer",
+            "request": "launch",
+            "mainClass": "leetcode.java.SumOfSquareNumer",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "leetcode.java.Solution",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinaryTree",
+            "request": "launch",
+            "mainClass": "data_structures.java.trees.BinaryTree",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StackArray",
+            "request": "launch",
+            "mainClass": "data_structures.java.Stack.StackArray",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickSort2",
+            "request": "launch",
+            "mainClass": "algo_in_java.Sorts.QuickSort2",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickSort",
+            "request": "launch",
+            "mainClass": "algo_in_java.Sorts.QuickSort",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "data_structures.java.hash.App",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Trie",
+            "request": "launch",
+            "mainClass": "data_structures.java.trees.Trie",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fabonacci",
+            "request": "launch",
+            "mainClass": "algo_in_java.DynamicProgramming.Fabonacci",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinarySearch",
+            "request": "launch",
+            "mainClass": "algo_in_java.Searches.BinarySearch",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "algo_in_java.DynamicProgramming.LongestCommonSubsequence",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "algo_in_java.LongestCommonSubsequence",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "name": "clang++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "clang++ build active file"
+        }
+    ]
+}
