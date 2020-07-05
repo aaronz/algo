@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ValidPalindarome",
+            "request": "launch",
+            "mainClass": "leetcode.java.ValidPalindarome",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ReverseVowels",
             "request": "launch",
             "mainClass": "leetcode.java.ReverseVowels",
