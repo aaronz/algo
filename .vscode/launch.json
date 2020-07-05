@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MergeTwoList",
+            "request": "launch",
+            "mainClass": "leetcode.java.MergeTwoList",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ValidPalindarome",
             "request": "launch",
             "mainClass": "leetcode.java.ValidPalindarome",
