@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Flatten",
+            "request": "launch",
+            "mainClass": "leetcode.java.Flatten",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ValidTree",
+            "request": "launch",
+            "mainClass": "leetcode.java.ValidTree",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - XorMax",
+            "request": "launch",
+            "mainClass": "leetcode.java.XorMax",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MergeTwoList",
             "request": "launch",
             "mainClass": "leetcode.java.MergeTwoList",
