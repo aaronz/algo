@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AddStrings",
+            "request": "launch",
+            "mainClass": "leetcode.java.AddStrings",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Flatten",
             "request": "launch",
             "mainClass": "leetcode.java.Flatten",
