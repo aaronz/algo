@@ -7,6 +7,7 @@ public class Fabonacci {
 
     private static Map<Integer, Integer> map = new HashMap<>();
 
+    // fib with memo
     public static int fibMemo(int n) {
         if (map.containsKey(n)) {
             return map.get(n);
