@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - findRepeatNumber",
+            "request": "launch",
+            "mainClass": "leetcode.java.findRepeatNumber",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveKNumbers",
+            "request": "launch",
+            "mainClass": "leetcode.java.RemoveKNumbers",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
             "mainClass": "algo_in_java.Recursion.Solution",

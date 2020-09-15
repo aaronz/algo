@@ -1,3 +1,5 @@
+package algo_in_java;
+
 public class Dijkstra {
     public static final int M = 10000;
 
