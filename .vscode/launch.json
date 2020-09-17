@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EditDistance",
+            "request": "launch",
+            "mainClass": "leetcode.java.EditDistance",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IsUnique",
+            "request": "launch",
+            "mainClass": "leetcode.java.IsUnique",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - findRepeatNumber",
             "request": "launch",
             "mainClass": "leetcode.java.findRepeatNumber",
