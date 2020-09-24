@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - checkSubarraySum",
+            "request": "launch",
+            "mainClass": "leetcode.java.checkSubarraySum",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SubarrayDivByK",
             "request": "launch",
             "mainClass": "leetcode.java.SubarrayDivByK",
