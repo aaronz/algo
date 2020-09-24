@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ResolveNQueen",
+            "request": "launch",
+            "mainClass": "leetcode.java.ResolveNQueen",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindNumberIn2DArray",
+            "request": "launch",
+            "mainClass": "leetcode.java.FindNumberIn2DArray",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Permutation",
             "request": "launch",
             "mainClass": "leetcode.java.Permutation",
