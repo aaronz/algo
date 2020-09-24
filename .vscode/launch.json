@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SubarraySum",
+            "request": "launch",
+            "mainClass": "leetcode.java.SubarraySum",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ResolveNQueen",
             "request": "launch",
             "mainClass": "leetcode.java.ResolveNQueen",
