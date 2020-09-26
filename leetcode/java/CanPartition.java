@@ -52,6 +52,8 @@ public class CanPartition {
         sum /= 2;
 
         boolean[][] dp = new boolean[nums.length][sum + 1];
+        // important: if nums[0] <= sum, then two partition 
+        // should be {0}, {nums[0]}.
         if (nums[0] <= sum) {
             dp[0][nums[0]] = true;
         }

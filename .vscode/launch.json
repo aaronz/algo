@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MinWindow",
+            "request": "launch",
+            "mainClass": "leetcode.java.MinWindow",
+            "projectName": "algo_a43b6718"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CanPartition",
             "request": "launch",
             "mainClass": "leetcode.java.CanPartition",
