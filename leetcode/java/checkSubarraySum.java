@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class checkSubarraySum {
+public class CheckSubarraySum {
 
     public static void main(String[] args) {
         int[] nums = { 4, 0, 5, 7 };

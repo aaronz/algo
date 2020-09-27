@@ -2,7 +2,7 @@ package leetcode.java;
 
 import java.util.HashSet;
 
-public class findRepeatNumber {
+public class FindRepeatNumber {
 
     public static int findRepeatNumber(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
