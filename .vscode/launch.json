@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NextGreaterElementV2",
+            "request": "launch",
+            "mainClass": "leetcode.java.NextGreaterElementV2",
+            "projectName": "algo_e91b38d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NextGreaterElement",
+            "request": "launch",
+            "mainClass": "leetcode.java.NextGreaterElement",
+            "projectName": "algo_e91b38d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MinWindow",
             "request": "launch",
             "mainClass": "leetcode.java.MinWindow",
