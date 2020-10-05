@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Exists",
+            "request": "launch",
+            "mainClass": "leetcode.java.Exists",
+            "projectName": "algo_5aa23adc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NextGreaterElementV2",
             "request": "launch",
             "mainClass": "leetcode.java.NextGreaterElementV2",
